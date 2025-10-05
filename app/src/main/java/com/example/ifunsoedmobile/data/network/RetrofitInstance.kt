@@ -11,6 +11,7 @@ object RetrofitInstance {
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+
             .create(OpenLibraryApi::class.java)
     }
 }
